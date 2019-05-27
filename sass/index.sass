@@ -1,0 +1,78 @@
+@charset "UTF-8"
+
+body
+  overflow-x: hidden
+  background: url(../img/.jpg) no-repeat top center
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", Arial ,sans-serif
+
+img
+  max-width: 100%
+  height: auto
+
+.clearfix
+  *zoom: 1
+  &::after
+    clear: both
+    content: ""
+    display: block
+    height: 0
+    visibility: hidden
+
+.logo
+  float: left
+  width: 150px
+  height: 50px
+  background: url("../img/logo.png") no-repeat center center
+  background-size: 75%
+  overflow: hidden
+  text-indent: 100%
+  white-space: nowrap
+  a
+    display: block
+    width: 100%
+    height: 100%
+
+#gotop
+  display: none
+  position: fixed
+  right: 20px
+  bottom: 20px
+  padding: 16px 20px
+  font-size: 20px
+  background: rgba(0, 0, 0, 0.3)
+  color: white
+  cursor: pointer
+  z-index: 500
+  border-radius: 50px
+  &:hover
+    background: rgba(0, 0, 0, 0.6)
+    transition: .4s
+
+.liu
+  height: 120px
+  margin: 0 auto
+  width: 300px
+  margin-bottom: 20px
+  padding-top: 10px
+  background-color: #ccc
+  border-radius: 10px
+  p
+    font-size: 20px
+  #answer
+    color: red
+    margin-top: 10px
+  input
+    border: 1px solid #666
+
+#chiratxt
+  height: 40px
+
+#databaseNow
+  .database
+    display: inline-block
+    background-color: aqua
+    border-radius: 6px
+    padding: 4px 10px
+    cursor: pointer
+  .actived
+    background-color: pink

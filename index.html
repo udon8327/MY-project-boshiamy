@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <!--meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')-->
+    <meta name="description" content="嘸蝦米打字練習">
+    <meta name="keywords" content="嘸蝦米打字練習">
+    <meta name="author" content="Bohan Huang">
+    <!--meta(property='og:title', content='FB分享用標字')-->
+    <!--meta(property='og:description', content='FB分享用描述')-->
+    <!--meta(property='og:url', content='FB分享用網址，使用絕對路徑')-->
+    <!--meta(property='og:image', content='FB分享用縮圖，使用絕對路徑')-->
+    <!--meta(property='og:type', content='website')-->
+    <link rel="shortcut icon" href="img/.ico">
+    <title>嘸蝦米打字練習</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/index.css"><!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--gotop-->
+    <div id="gotop"><i class="glyphicon glyphicon-menu-up"></i></div>
+    <!--nav-->
+    <nav class="text-center"></nav>
+    <!--header-->
+    <header class="text-center">
+      <!--h1.logo
+      a(href='#') Aqours
+      
+      -->
+    </header>
+    <!--main-->
+    <main class="text-center">
+      <div class="container">
+        <p id="test1"></p>
+        <p id="test2"></p>
+        <p id="test3"></p>
+        <p id="test4"></p>
+        <p id="test5"></p>
+        <p id="test6"></p><br>
+        <div class="liu">
+          <p id="question"></p>
+          <input id="key">
+          <p id="answer"></p>
+        </div>
+        <div class="btn row">
+          <div class="xs-2 xs-offset-10">
+            <button id="next">換一字(F1)</button>
+          </div>
+          <div class="xs-2">
+            <button id="chira">看字根(F2)</button>
+          </div>
+        </div>
+        <div class="row text-center">
+          <p id="chiratxt"></p>
+        </div><br>
+        <div class="jsondiv">
+          <div class="xs-12 xs-push-6">
+            <div id="databaseNow">
+              <div class="database actived" data="0">字庫1</div>
+              <div class="database" data="1">字庫2</div>
+              <div class="database" data="2">字庫3</div>
+              <div class="database" data="3">字庫4</div>
+              <div class="database" data="4">字庫5</div>
+            </div>
+            <div id="questionList">目前字庫</div>
+            <input id="myWordAdd">
+            <button id="myWordAddBtn">加入</button>
+            <input id="myWordDel">
+            <button id="myWordDelBtn">刪除</button>
+            <button id="myWordDelAllBtn">全部刪除</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--footer-->
+    <footer class="text-center"></footer>
+    <!--script-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!--script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')-->
+    <script src="js/liu.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

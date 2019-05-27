@@ -1,0 +1,83 @@
+doctype html
+html(lang='zh-Hant-TW')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width initial-scale=1.0')
+    //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
+    meta(name='description' content='嘸蝦米打字練習')
+    meta(name='keywords' content='嘸蝦米打字練習')
+    meta(name='author' content='Bohan Huang')
+    //meta(property='og:title', content='FB分享用標字')
+    //meta(property='og:description', content='FB分享用描述')
+    //meta(property='og:url', content='FB分享用網址，使用絕對路徑')
+    //meta(property='og:image', content='FB分享用縮圖，使用絕對路徑')
+    //meta(property='og:type', content='website')
+    link(rel='shortcut icon' href='img/.ico')
+    title 嘸蝦米打字練習
+    link(rel='stylesheet' href='css/mycss.css')
+    link(rel='stylesheet' href='css/index.css')
+    | <!--[if lt IE 9]>
+    |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    | <![endif]-->
+
+  body
+
+    //gotop
+    #gotop
+      i.glyphicon.glyphicon-menu-up
+
+    //nav
+    nav.text-center
+
+    //header
+    header.text-center
+      //h1.logo
+        a(href='#') Aqours
+
+    //main
+    main.text-center
+      .container
+        p#test1
+        p#test2
+        p#test3
+        p#test4
+        p#test5
+        p#test6
+        br
+        .liu
+          p#question
+          input#key
+          p#answer
+        .btn.row
+          .xs-2.xs-offset-10
+            button#next 換一字(F1)
+          .xs-2
+            button#chira 看字根(F2)
+        .row.text-center
+          p#chiratxt
+        br
+        .jsondiv
+          .xs-12.xs-push-6
+            #databaseNow
+              .database.actived(data=0) 字庫1
+              .database(data=1) 字庫2
+              .database(data=2) 字庫3
+              .database(data=3) 字庫4
+              .database(data=4) 字庫5
+            #questionList 目前字庫
+            input#myWordAdd
+            button#myWordAddBtn 加入
+            input#myWordDel
+            button#myWordDelBtn 刪除
+            button#myWordDelAllBtn 全部刪除
+
+    //footer
+    footer.text-center
+
+    //script
+    script(src='js/jquery-2.1.4.min.js')
+    //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
+    script(src='js/liu.js')
+    script(src='js/index.js')

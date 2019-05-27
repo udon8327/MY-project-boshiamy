@@ -1,0 +1,1782 @@
+//variable
+$container: 1200px
+
+//normalize
+html
+  font-family: sans-serif
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+body
+  margin: 0
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+  display: block
+
+audio, canvas, progress, video
+  display: inline-block
+  vertical-align: baseline
+
+audio:not([controls])
+  display: none
+  height: 0
+
+[hidden], template
+  display: none
+
+a
+  background-color: transparent
+  &:active, &:hover
+    outline: 0
+
+abbr[title]
+  border-bottom: 1px dotted
+
+b, strong
+  font-weight: bold
+
+dfn
+  font-style: italic
+
+h1
+  font-size: 2em
+  margin: 0.67em 0
+
+mark
+  background: #ff0
+  color: #000
+
+small
+  font-size: 80%
+
+sub
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+  top: -0.5em
+
+sub
+  bottom: -0.25em
+
+img
+  border: 0
+
+svg:not(:root)
+  overflow: hidden
+
+figure
+  margin: 1em 40px
+
+hr
+  -webkit-box-sizing: content-box
+  -moz-box-sizing: content-box
+  box-sizing: content-box
+  height: 0
+
+pre
+  overflow: auto
+
+code, kbd, pre, samp
+  font-family: monospace, monospace
+  font-size: 1em
+
+button, input, optgroup, select, textarea
+  color: inherit
+  font: inherit
+  margin: 0
+
+button
+  overflow: visible
+  text-transform: none
+
+select
+  text-transform: none
+
+button, html input[type="button"]
+  -webkit-appearance: button
+  cursor: pointer
+
+input
+  &[type="reset"], &[type="submit"]
+    -webkit-appearance: button
+    cursor: pointer
+
+button[disabled], html input[disabled]
+  cursor: default
+
+button::-moz-focus-inner
+  border: 0
+  padding: 0
+
+input
+  &::-moz-focus-inner
+    border: 0
+    padding: 0
+  line-height: normal
+  &[type="checkbox"], &[type="radio"]
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 0
+  &[type="number"]
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+      height: auto
+  &[type="search"]
+    -webkit-appearance: textfield
+    -webkit-box-sizing: content-box
+    -moz-box-sizing: content-box
+    box-sizing: content-box
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration
+      -webkit-appearance: none
+
+fieldset
+  border: 1px solid #c0c0c0
+  margin: 0 2px
+  padding: 0.35em 0.625em 0.75em
+
+legend
+  border: 0
+  padding: 0
+
+textarea
+  overflow: auto
+
+optgroup
+  font-weight: bold
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+td, th
+  padding: 0
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+html
+  font-size: 10px
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+input, button, select, textarea
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+
+figure
+  margin: 0
+
+img
+  vertical-align: middle
+
+[role="button"]
+  cursor: pointer
+
+//gototop
+#gotop
+  display: none
+  position: fixed
+  right: 20px
+  bottom: 20px
+  padding: 16px 20px
+  font-size: 20px
+  background: rgba(0, 0, 0, 0.3)
+  color: white
+  cursor: pointer
+  z-index: 500
+  border-radius: 50px
+  &:hover
+    background: rgba(0, 0, 0, 0.6)
+    transition: .4s
+
+//youtube rwd
+.video-container
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 30px
+  height: 0
+  overflow: hidden
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+//bootstrap same height
+.rowsameheight
+  display: flex
+  flex-wrap: wrap
+  [class*=""]
+    display: flex
+    flex-direction: column
+
+//body
+body
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", Arial ,sans-serif
+  font-size: 16px
+  line-height: 1.5
+  color: #333
+  overflow-x: hidden
+
+//logo
+.logo
+  width: 300px
+  height: 108px
+  background: url('../img/logo.png') no-repeat
+  margin: 0
+  overflow: hidden
+  text-indent: 100%
+  white-space: nowrap
+  a
+    display: block
+    width: 100%
+    height: 100%
+
+//a
+a
+  color: #337ab7
+  text-decoration: none
+  transition: all 0.2s ease
+  &:hover
+    color: #23527c
+    text-decoration: none
+  &:focus
+    color: #23527c
+    text-decoration: none
+    outline: 5px auto -webkit-focus-ring-color
+    outline-offset: -2px
+
+//h
+h1,h2,h3,h4,h5,h6,p,span
+  margin: 0
+h1
+  font-size: 40px
+h2
+  font-size: 36px
+h3
+  font-size: 32px
+h4
+  font-size: 28px
+h5
+  font-size: 24px
+h6
+  font-size: 20px
+
+//text
+.text-left
+  text-align: left
+.text-right
+  text-align: right
+.text-center
+  text-align: center
+.text-justify
+  text-align: justify
+
+//img
+.imgr
+  display: block
+  width: 100%
+  height: auto
+
+.img-center
+  left: 50%
+  transform: translateX(-50%)
+  position: absolute
+
+//position
+.pr
+  position: relative
+
+.pa
+  position: relative
+
+.pf
+  position: fixed
+
+//margin-bottom
+.mb5
+  margin-bottom: 5px
+
+.mb10
+  margin-bottom: 10px
+
+.mb15
+  margin-bottom: 15px
+
+.mb30
+  margin-bottom: 30px
+
+.mb50
+  margin-bottom: 50px
+
+.mb100
+  margin-bottom: 100px
+
+//hr
+hr
+  margin-top: 20px
+  margin-bottom: 20px
+  border: 0
+  border-top: 1px solid #eeeeee
+
+//ul
+ul
+  list-style: none
+
+//clearfix
+.clearfix
+  *zoom: 1
+  &::after
+    clear: both
+    content: ""
+    display: block
+    height: 0
+    visibility: hidden
+
+//container and row
+.container, .container-fluid
+  margin: 0 auto
+@media (min-width: 768px)
+  .container
+    width: 768px
+@media (min-width: 992px)
+  .container
+    width: 992px
+@media (min-width: $container)
+  .container
+    width: $container
+
+.container
+  &:before, &:after
+    content: " "
+    display: table
+
+.container-fluid
+  &:before, &:after
+    content: " "
+    display: table
+
+.row
+  &:before, &:after
+    content: " "
+    display: table
+
+.clearfix:after, .container:after, .container-fluid:after, .row:after
+  clear: both
+
+//hide and show
+.hide
+  display: none !important
+
+.hidden
+  display: none !important
+
+.show
+  display: block !important
+
+.text-hide
+  font: 0/0 a
+  color: transparent
+  text-shadow: none
+  background-color: transparent
+  border: 0
+
+//grid system-24
+.xs-1, .sm-1, .md-1, .lg-1, .xs-2, .sm-2, .md-2, .lg-2, .xs-3, .sm-3, .md-3, .lg-3, .xs-4, .sm-4, .md-4, .lg-4, .xs-5, .sm-5, .md-5, .lg-5, .xs-6, .sm-6, .md-6, .lg-6, .xs-7, .sm-7, .md-7, .lg-7, .xs-8, .sm-8, .md-8, .lg-8, .xs-9, .sm-9, .md-9, .lg-9, .xs-10, .sm-10, .md-10, .lg-10, .xs-11, .sm-11, .md-11, .lg-11, .xs-12, .sm-12, .md-12, .lg-12, .xs-13, .sm-13, .md-13, .lg-13, .xs-14, .sm-14, .md-14, .lg-14, .xs-15, .sm-15, .md-15, .lg-15, .xs-16, .sm-16, .md-16, .lg-16, .xs-17, .sm-17, .md-17, .lg-17, .xs-18, .sm-18, .md-18, .lg-18, .xs-19, .sm-19, .md-19, .lg-19, .xs-20, .sm-20, .md-20, .lg-20, .xs-21, .sm-21, .md-21, .lg-21, .xs-22, .sm-22, .md-22, .lg-22, .xs-23, .sm-23, .md-23, .lg-23, .xs-24, .sm-24, .md-24, .lg-24
+  position: relative
+  min-height: 1px
+  padding-left: 0px
+  padding-right: 0px
+
+.xs-1, .xs-2, .xs-3, .xs-4, .xs-5, .xs-6, .xs-7, .xs-8, .xs-9, .xs-10, .xs-11, .xs-12, .xs-13, .xs-14, .xs-15, .xs-16, .xs-17, .xs-18, .xs-19, .xs-20, .xs-21, .xs-22, .xs-23
+  float: left
+.xs-24
+  float: left
+  width: 100%
+.xs-23
+  width: 95.83333333%
+.xs-22
+  width: 91.66666667%
+.xs-21
+  width: 87.5%
+.xs-20
+  width: 83.33333333%
+.xs-19
+  width: 79.16666667%
+.xs-18
+  width: 75%
+.xs-17
+  width: 70.83333333%
+.xs-16
+  width: 66.66666667%
+.xs-15
+  width: 62.5%
+.xs-14
+  width: 58.33333333%
+.xs-13
+  width: 54.16666667%
+.xs-12
+  width: 50%
+.xs-11
+  width: 45.83333333%
+.xs-10
+  width: 41.66666667%
+.xs-9
+  width: 37.5%
+.xs-8
+  width: 33.33333333%
+.xs-7
+  width: 29.16666667%
+.xs-6
+  width: 25%
+.xs-5
+  width: 20.83333333%
+.xs-4
+  width: 16.66666667%
+.xs-3
+  width: 12.5%
+.xs-2
+  width: 8.33333333%
+.xs-1
+  width: 4.16666667%
+.xs-pull-24
+  right: 100%
+.xs-pull-23
+  right: 95.83333333%
+.xs-pull-22
+  right: 91.66666667%
+.xs-pull-21
+  right: 87.5%
+.xs-pull-20
+  right: 83.33333333%
+.xs-pull-19
+  right: 79.16666667%
+.xs-pull-18
+  right: 75%
+.xs-pull-17
+  right: 70.83333333%
+.xs-pull-16
+  right: 66.66666667%
+.xs-pull-15
+  right: 62.5%
+.xs-pull-14
+  right: 58.33333333%
+.xs-pull-13
+  right: 54.16666667%
+.xs-pull-12
+  right: 50%
+.xs-pull-11
+  right: 45.83333333%
+.xs-pull-10
+  right: 41.66666667%
+.xs-pull-9
+  right: 37.5%
+.xs-pull-8
+  right: 33.33333333%
+.xs-pull-7
+  right: 29.16666667%
+.xs-pull-6
+  right: 25%
+.xs-pull-5
+  right: 20.83333333%
+.xs-pull-4
+  right: 16.66666667%
+.xs-pull-3
+  right: 12.5%
+.xs-pull-2
+  right: 8.33333333%
+.xs-pull-1
+  right: 4.16666667%
+.xs-pull-0
+  right: auto
+.xs-push-24
+  left: 100%
+.xs-push-23
+  left: 95.83333333%
+.xs-push-22
+  left: 91.66666667%
+.xs-push-21
+  left: 87.5%
+.xs-push-20
+  left: 83.33333333%
+.xs-push-19
+  left: 79.16666667%
+.xs-push-18
+  left: 75%
+.xs-push-17
+  left: 70.83333333%
+.xs-push-16
+  left: 66.66666667%
+.xs-push-15
+  left: 62.5%
+.xs-push-14
+  left: 58.33333333%
+.xs-push-13
+  left: 54.16666667%
+.xs-push-12
+  left: 50%
+.xs-push-11
+  left: 45.83333333%
+.xs-push-10
+  left: 41.66666667%
+.xs-push-9
+  left: 37.5%
+.xs-push-8
+  left: 33.33333333%
+.xs-push-7
+  left: 29.16666667%
+.xs-push-6
+  left: 25%
+.xs-push-5
+  left: 20.83333333%
+.xs-push-4
+  left: 16.66666667%
+.xs-push-3
+  left: 12.5%
+.xs-push-2
+  left: 8.33333333%
+.xs-push-1
+  left: 4.16666667%
+.xs-push-0
+  left: auto
+.xs-offset-24
+  margin-left: 100%
+.xs-offset-23
+  margin-left: 95.83333333%
+.xs-offset-22
+  margin-left: 91.66666667%
+.xs-offset-21
+  margin-left: 87.5%
+.xs-offset-20
+  margin-left: 83.33333333%
+.xs-offset-19
+  margin-left: 79.16666667%
+.xs-offset-18
+  margin-left: 75%
+.xs-offset-17
+  margin-left: 70.83333333%
+.xs-offset-16
+  margin-left: 66.66666667%
+.xs-offset-15
+  margin-left: 62.5%
+.xs-offset-14
+  margin-left: 58.33333333%
+.xs-offset-13
+  margin-left: 54.16666667%
+.xs-offset-12
+  margin-left: 50%
+.xs-offset-11
+  margin-left: 45.83333333%
+.xs-offset-10
+  margin-left: 41.66666667%
+.xs-offset-9
+  margin-left: 37.5%
+.xs-offset-8
+  margin-left: 33.33333333%
+.xs-offset-7
+  margin-left: 29.16666667%
+.xs-offset-6
+  margin-left: 25%
+.xs-offset-5
+  margin-left: 20.83333333%
+.xs-offset-4
+  margin-left: 16.66666667%
+.xs-offset-3
+  margin-left: 12.5%
+.xs-offset-2
+  margin-left: 8.33333333%
+.xs-offset-1
+  margin-left: 4.16666667%
+.xs-offset-0
+  margin-left: 0%
+@media (min-width: 768px)
+  .sm-1, .sm-2, .sm-3, .sm-4, .sm-5, .sm-6, .sm-7, .sm-8, .sm-9, .sm-10, .sm-11, .sm-12, .sm-13, .sm-14, .sm-15, .sm-16, .sm-17, .sm-18, .sm-19, .sm-20, .sm-21, .sm-22, .sm-23
+    float: left
+  .sm-24
+    float: left
+    width: 100%
+  .sm-23
+    width: 95.83333333%
+  .sm-22
+    width: 91.66666667%
+  .sm-21
+    width: 87.5%
+  .sm-20
+    width: 83.33333333%
+  .sm-19
+    width: 79.16666667%
+  .sm-18
+    width: 75%
+  .sm-17
+    width: 70.83333333%
+  .sm-16
+    width: 66.66666667%
+  .sm-15
+    width: 62.5%
+  .sm-14
+    width: 58.33333333%
+  .sm-13
+    width: 54.16666667%
+  .sm-12
+    width: 50%
+  .sm-11
+    width: 45.83333333%
+  .sm-10
+    width: 41.66666667%
+  .sm-9
+    width: 37.5%
+  .sm-8
+    width: 33.33333333%
+  .sm-7
+    width: 29.16666667%
+  .sm-6
+    width: 25%
+  .sm-5
+    width: 20.83333333%
+  .sm-4
+    width: 16.66666667%
+  .sm-3
+    width: 12.5%
+  .sm-2
+    width: 8.33333333%
+  .sm-1
+    width: 4.16666667%
+  .sm-pull-24
+    right: 100%
+  .sm-pull-23
+    right: 95.83333333%
+  .sm-pull-22
+    right: 91.66666667%
+  .sm-pull-21
+    right: 87.5%
+  .sm-pull-20
+    right: 83.33333333%
+  .sm-pull-19
+    right: 79.16666667%
+  .sm-pull-18
+    right: 75%
+  .sm-pull-17
+    right: 70.83333333%
+  .sm-pull-16
+    right: 66.66666667%
+  .sm-pull-15
+    right: 62.5%
+  .sm-pull-14
+    right: 58.33333333%
+  .sm-pull-13
+    right: 54.16666667%
+  .sm-pull-12
+    right: 50%
+  .sm-pull-11
+    right: 45.83333333%
+  .sm-pull-10
+    right: 41.66666667%
+  .sm-pull-9
+    right: 37.5%
+  .sm-pull-8
+    right: 33.33333333%
+  .sm-pull-7
+    right: 29.16666667%
+  .sm-pull-6
+    right: 25%
+  .sm-pull-5
+    right: 20.83333333%
+  .sm-pull-4
+    right: 16.66666667%
+  .sm-pull-3
+    right: 12.5%
+  .sm-pull-2
+    right: 8.33333333%
+  .sm-pull-1
+    right: 4.16666667%
+  .sm-pull-0
+    right: auto
+  .sm-push-24
+    left: 100%
+  .sm-push-23
+    left: 95.83333333%
+  .sm-push-22
+    left: 91.66666667%
+  .sm-push-21
+    left: 87.5%
+  .sm-push-20
+    left: 83.33333333%
+  .sm-push-19
+    left: 79.16666667%
+  .sm-push-18
+    left: 75%
+  .sm-push-17
+    left: 70.83333333%
+  .sm-push-16
+    left: 66.66666667%
+  .sm-push-15
+    left: 62.5%
+  .sm-push-14
+    left: 58.33333333%
+  .sm-push-13
+    left: 54.16666667%
+  .sm-push-12
+    left: 50%
+  .sm-push-11
+    left: 45.83333333%
+  .sm-push-10
+    left: 41.66666667%
+  .sm-push-9
+    left: 37.5%
+  .sm-push-8
+    left: 33.33333333%
+  .sm-push-7
+    left: 29.16666667%
+  .sm-push-6
+    left: 25%
+  .sm-push-5
+    left: 20.83333333%
+  .sm-push-4
+    left: 16.66666667%
+  .sm-push-3
+    left: 12.5%
+  .sm-push-2
+    left: 8.33333333%
+  .sm-push-1
+    left: 4.16666667%
+  .sm-push-0
+    left: auto
+  .sm-offset-24
+    margin-left: 100%
+  .sm-offset-23
+    margin-left: 95.83333333%
+  .sm-offset-22
+    margin-left: 91.66666667%
+  .sm-offset-21
+    margin-left: 87.5%
+  .sm-offset-20
+    margin-left: 83.33333333%
+  .sm-offset-19
+    margin-left: 79.16666667%
+  .sm-offset-18
+    margin-left: 75%
+  .sm-offset-17
+    margin-left: 70.83333333%
+  .sm-offset-16
+    margin-left: 66.66666667%
+  .sm-offset-15
+    margin-left: 62.5%
+  .sm-offset-14
+    margin-left: 58.33333333%
+  .sm-offset-13
+    margin-left: 54.16666667%
+  .sm-offset-12
+    margin-left: 50%
+  .sm-offset-11
+    margin-left: 45.83333333%
+  .sm-offset-10
+    margin-left: 41.66666667%
+  .sm-offset-9
+    margin-left: 37.5%
+  .sm-offset-8
+    margin-left: 33.33333333%
+  .sm-offset-7
+    margin-left: 29.16666667%
+  .sm-offset-6
+    margin-left: 25%
+  .sm-offset-5
+    margin-left: 20.83333333%
+  .sm-offset-4
+    margin-left: 16.66666667%
+  .sm-offset-3
+    margin-left: 12.5%
+  .sm-offset-2
+    margin-left: 8.33333333%
+  .sm-offset-1
+    margin-left: 4.16666667%
+  .sm-offset-0
+    margin-left: 0%
+
+@media (min-width: 992px)
+  .md-1, .md-2, .md-3, .md-4, .md-5, .md-6, .md-7, .md-8, .md-9, .md-10, .md-11, .md-12, .md-13, .md-14, .md-15, .md-16, .md-17, .md-18, .md-19, .md-20, .md-21, .md-22, .md-23
+    float: left
+  .md-24
+    float: left
+    width: 100%
+  .md-23
+    width: 95.83333333%
+  .md-22
+    width: 91.66666667%
+  .md-21
+    width: 87.5%
+  .md-20
+    width: 83.33333333%
+  .md-19
+    width: 79.16666667%
+  .md-18
+    width: 75%
+  .md-17
+    width: 70.83333333%
+  .md-16
+    width: 66.66666667%
+  .md-15
+    width: 62.5%
+  .md-14
+    width: 58.33333333%
+  .md-13
+    width: 54.16666667%
+  .md-12
+    width: 50%
+  .md-11
+    width: 45.83333333%
+  .md-10
+    width: 41.66666667%
+  .md-9
+    width: 37.5%
+  .md-8
+    width: 33.33333333%
+  .md-7
+    width: 29.16666667%
+  .md-6
+    width: 25%
+  .md-5
+    width: 20.83333333%
+  .md-4
+    width: 16.66666667%
+  .md-3
+    width: 12.5%
+  .md-2
+    width: 8.33333333%
+  .md-1
+    width: 4.16666667%
+  .md-pull-24
+    right: 100%
+  .md-pull-23
+    right: 95.83333333%
+  .md-pull-22
+    right: 91.66666667%
+  .md-pull-21
+    right: 87.5%
+  .md-pull-20
+    right: 83.33333333%
+  .md-pull-19
+    right: 79.16666667%
+  .md-pull-18
+    right: 75%
+  .md-pull-17
+    right: 70.83333333%
+  .md-pull-16
+    right: 66.66666667%
+  .md-pull-15
+    right: 62.5%
+  .md-pull-14
+    right: 58.33333333%
+  .md-pull-13
+    right: 54.16666667%
+  .md-pull-12
+    right: 50%
+  .md-pull-11
+    right: 45.83333333%
+  .md-pull-10
+    right: 41.66666667%
+  .md-pull-9
+    right: 37.5%
+  .md-pull-8
+    right: 33.33333333%
+  .md-pull-7
+    right: 29.16666667%
+  .md-pull-6
+    right: 25%
+  .md-pull-5
+    right: 20.83333333%
+  .md-pull-4
+    right: 16.66666667%
+  .md-pull-3
+    right: 12.5%
+  .md-pull-2
+    right: 8.33333333%
+  .md-pull-1
+    right: 4.16666667%
+  .md-pull-0
+    right: auto
+  .md-push-24
+    left: 100%
+  .md-push-23
+    left: 95.83333333%
+  .md-push-22
+    left: 91.66666667%
+  .md-push-21
+    left: 87.5%
+  .md-push-20
+    left: 83.33333333%
+  .md-push-19
+    left: 79.16666667%
+  .md-push-18
+    left: 75%
+  .md-push-17
+    left: 70.83333333%
+  .md-push-16
+    left: 66.66666667%
+  .md-push-15
+    left: 62.5%
+  .md-push-14
+    left: 58.33333333%
+  .md-push-13
+    left: 54.16666667%
+  .md-push-12
+    left: 50%
+  .md-push-11
+    left: 45.83333333%
+  .md-push-10
+    left: 41.66666667%
+  .md-push-9
+    left: 37.5%
+  .md-push-8
+    left: 33.33333333%
+  .md-push-7
+    left: 29.16666667%
+  .md-push-6
+    left: 25%
+  .md-push-5
+    left: 20.83333333%
+  .md-push-4
+    left: 16.66666667%
+  .md-push-3
+    left: 12.5%
+  .md-push-2
+    left: 8.33333333%
+  .md-push-1
+    left: 4.16666667%
+  .md-push-0
+    left: auto
+  .md-offset-24
+    margin-left: 100%
+  .md-offset-23
+    margin-left: 95.83333333%
+  .md-offset-22
+    margin-left: 91.66666667%
+  .md-offset-21
+    margin-left: 87.5%
+  .md-offset-20
+    margin-left: 83.33333333%
+  .md-offset-19
+    margin-left: 79.16666667%
+  .md-offset-18
+    margin-left: 75%
+  .md-offset-17
+    margin-left: 70.83333333%
+  .md-offset-16
+    margin-left: 66.66666667%
+  .md-offset-15
+    margin-left: 62.5%
+  .md-offset-14
+    margin-left: 58.33333333%
+  .md-offset-13
+    margin-left: 54.16666667%
+  .md-offset-12
+    margin-left: 50%
+  .md-offset-11
+    margin-left: 45.83333333%
+  .md-offset-10
+    margin-left: 41.66666667%
+  .md-offset-9
+    margin-left: 37.5%
+  .md-offset-8
+    margin-left: 33.33333333%
+  .md-offset-7
+    margin-left: 29.16666667%
+  .md-offset-6
+    margin-left: 25%
+  .md-offset-5
+    margin-left: 20.83333333%
+  .md-offset-4
+    margin-left: 16.66666667%
+  .md-offset-3
+    margin-left: 12.5%
+  .md-offset-2
+    margin-left: 8.33333333%
+  .md-offset-1
+    margin-left: 4.16666667%
+  .md-offset-0
+    margin-left: 0%
+
+@media (min-width: $container)
+  .lg-1, .lg-2, .lg-3, .lg-4, .lg-5, .lg-6, .lg-7, .lg-8, .lg-9, .lg-10, .lg-11, .lg-12, .lg-13, .lg-14, .lg-15, .lg-16, .lg-17, .lg-18, .lg-19, .lg-20, .lg-21, .lg-22, .lg-23
+    float: left
+  .lg-24
+    float: left
+    width: 100%
+  .lg-23
+    width: 95.83333333%
+  .lg-22
+    width: 91.66666667%
+  .lg-21
+    width: 87.5%
+  .lg-20
+    width: 83.33333333%
+  .lg-19
+    width: 79.16666667%
+  .lg-18
+    width: 75%
+  .lg-17
+    width: 70.83333333%
+  .lg-16
+    width: 66.66666667%
+  .lg-15
+    width: 62.5%
+  .lg-14
+    width: 58.33333333%
+  .lg-13
+    width: 54.16666667%
+  .lg-12
+    width: 50%
+  .lg-11
+    width: 45.83333333%
+  .lg-10
+    width: 41.66666667%
+  .lg-9
+    width: 37.5%
+  .lg-8
+    width: 33.33333333%
+  .lg-7
+    width: 29.16666667%
+  .lg-6
+    width: 25%
+  .lg-5
+    width: 20.83333333%
+  .lg-4
+    width: 16.66666667%
+  .lg-3
+    width: 12.5%
+  .lg-2
+    width: 8.33333333%
+  .lg-1
+    width: 4.16666667%
+  .lg-pull-24
+    right: 100%
+  .lg-pull-23
+    right: 95.83333333%
+  .lg-pull-22
+    right: 91.66666667%
+  .lg-pull-21
+    right: 87.5%
+  .lg-pull-20
+    right: 83.33333333%
+  .lg-pull-19
+    right: 79.16666667%
+  .lg-pull-18
+    right: 75%
+  .lg-pull-17
+    right: 70.83333333%
+  .lg-pull-16
+    right: 66.66666667%
+  .lg-pull-15
+    right: 62.5%
+  .lg-pull-14
+    right: 58.33333333%
+  .lg-pull-13
+    right: 54.16666667%
+  .lg-pull-12
+    right: 50%
+  .lg-pull-11
+    right: 45.83333333%
+  .lg-pull-10
+    right: 41.66666667%
+  .lg-pull-9
+    right: 37.5%
+  .lg-pull-8
+    right: 33.33333333%
+  .lg-pull-7
+    right: 29.16666667%
+  .lg-pull-6
+    right: 25%
+  .lg-pull-5
+    right: 20.83333333%
+  .lg-pull-4
+    right: 16.66666667%
+  .lg-pull-3
+    right: 12.5%
+  .lg-pull-2
+    right: 8.33333333%
+  .lg-pull-1
+    right: 4.16666667%
+  .lg-pull-0
+    right: auto
+  .lg-push-24
+    left: 100%
+  .lg-push-23
+    left: 95.83333333%
+  .lg-push-22
+    left: 91.66666667%
+  .lg-push-21
+    left: 87.5%
+  .lg-push-20
+    left: 83.33333333%
+  .lg-push-19
+    left: 79.16666667%
+  .lg-push-18
+    left: 75%
+  .lg-push-17
+    left: 70.83333333%
+  .lg-push-16
+    left: 66.66666667%
+  .lg-push-15
+    left: 62.5%
+  .lg-push-14
+    left: 58.33333333%
+  .lg-push-13
+    left: 54.16666667%
+  .lg-push-12
+    left: 50%
+  .lg-push-11
+    left: 45.83333333%
+  .lg-push-10
+    left: 41.66666667%
+  .lg-push-9
+    left: 37.5%
+  .lg-push-8
+    left: 33.33333333%
+  .lg-push-7
+    left: 29.16666667%
+  .lg-push-6
+    left: 25%
+  .lg-push-5
+    left: 20.83333333%
+  .lg-push-4
+    left: 16.66666667%
+  .lg-push-3
+    left: 12.5%
+  .lg-push-2
+    left: 8.33333333%
+  .lg-push-1
+    left: 4.16666667%
+  .lg-push-0
+    left: auto
+  .lg-offset-24
+    margin-left: 100%
+  .lg-offset-23
+    margin-left: 95.83333333%
+  .lg-offset-22
+    margin-left: 91.66666667%
+  .lg-offset-21
+    margin-left: 87.5%
+  .lg-offset-20
+    margin-left: 83.33333333%
+  .lg-offset-19
+    margin-left: 79.16666667%
+  .lg-offset-18
+    margin-left: 75%
+  .lg-offset-17
+    margin-left: 70.83333333%
+  .lg-offset-16
+    margin-left: 66.66666667%
+  .lg-offset-15
+    margin-left: 62.5%
+  .lg-offset-14
+    margin-left: 58.33333333%
+  .lg-offset-13
+    margin-left: 54.16666667%
+  .lg-offset-12
+    margin-left: 50%
+  .lg-offset-11
+    margin-left: 45.83333333%
+  .lg-offset-10
+    margin-left: 41.66666667%
+  .lg-offset-9
+    margin-left: 37.5%
+  .lg-offset-8
+    margin-left: 33.33333333%
+  .lg-offset-7
+    margin-left: 29.16666667%
+  .lg-offset-6
+    margin-left: 25%
+  .lg-offset-5
+    margin-left: 20.83333333%
+  .lg-offset-4
+    margin-left: 16.66666667%
+  .lg-offset-3
+    margin-left: 12.5%
+  .lg-offset-2
+    margin-left: 8.33333333%
+  .lg-offset-1
+    margin-left: 4.16666667%
+  .lg-offset-0
+    margin-left: 0%
+
+//visible hidden
+.visible-xs, .visible-sm, .visible-md, .visible-lg
+  display: none !important
+@media (max-width: 767px)
+  .visible-xs
+    display: block !important
+@media (min-width: 768px) and (max-width: 991px)
+  .visible-sm
+    display: block !important
+@media (min-width: 992px) and (max-width: $container)
+  .visible-md
+    display: block !important
+@media (min-width: $container)
+  .visible-lg
+    display: block !important
+@media (max-width: 767px)
+  .hidden-xs
+    display: none !important
+@media (min-width: 768px) and (max-width: 991px)
+  .hidden-sm
+    display: none !important
+@media (min-width: 992px) and (max-width: $container)
+  .hidden-md
+    display: none !important
+@media (min-width: $container)
+  .hidden-lg
+    display: none !important
+
+//glyphicon
+@font-face
+  font-family: 'Glyphicons Halflings'
+  src: url('../plugins/fonts/glyphicons-halflings-regular.eot')
+  src: url('../plugins/fonts/glyphicons-halflings-regular.eot?#iefix') format("embedded-opentype"), url('../plugins/fonts/glyphicons-halflings-regular.woff2') format("woff2"), url('../plugins/fonts/glyphicons-halflings-regular.woff') format("woff"), url('../plugins/fonts/glyphicons-halflings-regular.ttf') format("truetype"), url('../plugins/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format("svg")
+.glyphicon
+  position: relative
+  top: 1px
+  display: inline-block
+  font-family: 'Glyphicons Halflings'
+  font-style: normal
+  font-weight: normal
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+.glyphicon-asterisk:before
+  content: "\002a"
+.glyphicon-plus:before
+  content: "\002b"
+.glyphicon-euro:before,
+.glyphicon-eur:before
+  content: "\20ac"
+.glyphicon-minus:before
+  content: "\2212"
+.glyphicon-cloud:before
+  content: "\2601"
+.glyphicon-envelope:before
+  content: "\2709"
+.glyphicon-pencil:before
+  content: "\270f"
+.glyphicon-glass:before
+  content: "\e001"
+.glyphicon-music:before
+  content: "\e002"
+.glyphicon-search:before
+  content: "\e003"
+.glyphicon-heart:before
+  content: "\e005"
+.glyphicon-star:before
+  content: "\e006"
+.glyphicon-star-empty:before
+  content: "\e007"
+.glyphicon-user:before
+  content: "\e008"
+.glyphicon-film:before
+  content: "\e009"
+.glyphicon-th-large:before
+  content: "\e010"
+.glyphicon-th:before
+  content: "\e011"
+.glyphicon-th-list:before
+  content: "\e012"
+.glyphicon-ok:before
+  content: "\e013"
+.glyphicon-remove:before
+  content: "\e014"
+.glyphicon-zoom-in:before
+  content: "\e015"
+.glyphicon-zoom-out:before
+  content: "\e016"
+.glyphicon-off:before
+  content: "\e017"
+.glyphicon-signal:before
+  content: "\e018"
+.glyphicon-cog:before
+  content: "\e019"
+.glyphicon-trash:before
+  content: "\e020"
+.glyphicon-home:before
+  content: "\e021"
+.glyphicon-file:before
+  content: "\e022"
+.glyphicon-time:before
+  content: "\e023"
+.glyphicon-road:before
+  content: "\e024"
+.glyphicon-download-alt:before
+  content: "\e025"
+.glyphicon-download:before
+  content: "\e026"
+.glyphicon-upload:before
+  content: "\e027"
+.glyphicon-inbox:before
+  content: "\e028"
+.glyphicon-play-circle:before
+  content: "\e029"
+.glyphicon-repeat:before
+  content: "\e030"
+.glyphicon-refresh:before
+  content: "\e031"
+.glyphicon-list-alt:before
+  content: "\e032"
+.glyphicon-lock:before
+  content: "\e033"
+.glyphicon-flag:before
+  content: "\e034"
+.glyphicon-headphones:before
+  content: "\e035"
+.glyphicon-volume-off:before
+  content: "\e036"
+.glyphicon-volume-down:before
+  content: "\e037"
+.glyphicon-volume-up:before
+  content: "\e038"
+.glyphicon-qrcode:before
+  content: "\e039"
+.glyphicon-barcode:before
+  content: "\e040"
+.glyphicon-tag:before
+  content: "\e041"
+.glyphicon-tags:before
+  content: "\e042"
+.glyphicon-book:before
+  content: "\e043"
+.glyphicon-bookmark:before
+  content: "\e044"
+.glyphicon-print:before
+  content: "\e045"
+.glyphicon-camera:before
+  content: "\e046"
+.glyphicon-font:before
+  content: "\e047"
+.glyphicon-bold:before
+  content: "\e048"
+.glyphicon-italic:before
+  content: "\e049"
+.glyphicon-text-height:before
+  content: "\e050"
+.glyphicon-text-width:before
+  content: "\e051"
+.glyphicon-align-left:before
+  content: "\e052"
+.glyphicon-align-center:before
+  content: "\e053"
+.glyphicon-align-right:before
+  content: "\e054"
+.glyphicon-align-justify:before
+  content: "\e055"
+.glyphicon-list:before
+  content: "\e056"
+.glyphicon-indent-left:before
+  content: "\e057"
+.glyphicon-indent-right:before
+  content: "\e058"
+.glyphicon-facetime-video:before
+  content: "\e059"
+.glyphicon-picture:before
+  content: "\e060"
+.glyphicon-map-marker:before
+  content: "\e062"
+.glyphicon-adjust:before
+  content: "\e063"
+.glyphicon-tint:before
+  content: "\e064"
+.glyphicon-edit:before
+  content: "\e065"
+.glyphicon-share:before
+  content: "\e066"
+.glyphicon-check:before
+  content: "\e067"
+.glyphicon-move:before
+  content: "\e068"
+.glyphicon-step-backward:before
+  content: "\e069"
+.glyphicon-fast-backward:before
+  content: "\e070"
+.glyphicon-backward:before
+  content: "\e071"
+.glyphicon-play:before
+  content: "\e072"
+.glyphicon-pause:before
+  content: "\e073"
+.glyphicon-stop:before
+  content: "\e074"
+.glyphicon-forward:before
+  content: "\e075"
+.glyphicon-fast-forward:before
+  content: "\e076"
+.glyphicon-step-forward:before
+  content: "\e077"
+.glyphicon-eject:before
+  content: "\e078"
+.glyphicon-chevron-left:before
+  content: "\e079"
+.glyphicon-chevron-right:before
+  content: "\e080"
+.glyphicon-plus-sign:before
+  content: "\e081"
+.glyphicon-minus-sign:before
+  content: "\e082"
+.glyphicon-remove-sign:before
+  content: "\e083"
+.glyphicon-ok-sign:before
+  content: "\e084"
+.glyphicon-question-sign:before
+  content: "\e085"
+.glyphicon-info-sign:before
+  content: "\e086"
+.glyphicon-screenshot:before
+  content: "\e087"
+.glyphicon-remove-circle:before
+  content: "\e088"
+.glyphicon-ok-circle:before
+  content: "\e089"
+.glyphicon-ban-circle:before
+  content: "\e090"
+.glyphicon-arrow-left:before
+  content: "\e091"
+.glyphicon-arrow-right:before
+  content: "\e092"
+.glyphicon-arrow-up:before
+  content: "\e093"
+.glyphicon-arrow-down:before
+  content: "\e094"
+.glyphicon-share-alt:before
+  content: "\e095"
+.glyphicon-resize-full:before
+  content: "\e096"
+.glyphicon-resize-small:before
+  content: "\e097"
+.glyphicon-exclamation-sign:before
+  content: "\e101"
+.glyphicon-gift:before
+  content: "\e102"
+.glyphicon-leaf:before
+  content: "\e103"
+.glyphicon-fire:before
+  content: "\e104"
+.glyphicon-eye-open:before
+  content: "\e105"
+.glyphicon-eye-close:before
+  content: "\e106"
+.glyphicon-warning-sign:before
+  content: "\e107"
+.glyphicon-plane:before
+  content: "\e108"
+.glyphicon-calendar:before
+  content: "\e109"
+.glyphicon-random:before
+  content: "\e110"
+.glyphicon-comment:before
+  content: "\e111"
+.glyphicon-magnet:before
+  content: "\e112"
+.glyphicon-chevron-up:before
+  content: "\e113"
+.glyphicon-chevron-down:before
+  content: "\e114"
+.glyphicon-retweet:before
+  content: "\e115"
+.glyphicon-shopping-cart:before
+  content: "\e116"
+.glyphicon-folder-close:before
+  content: "\e117"
+.glyphicon-folder-open:before
+  content: "\e118"
+.glyphicon-resize-vertical:before
+  content: "\e119"
+.glyphicon-resize-horizontal:before
+  content: "\e120"
+.glyphicon-hdd:before
+  content: "\e121"
+.glyphicon-bullhorn:before
+  content: "\e122"
+.glyphicon-bell:before
+  content: "\e123"
+.glyphicon-certificate:before
+  content: "\e124"
+.glyphicon-thumbs-up:before
+  content: "\e125"
+.glyphicon-thumbs-down:before
+  content: "\e126"
+.glyphicon-hand-right:before
+  content: "\e127"
+.glyphicon-hand-left:before
+  content: "\e128"
+.glyphicon-hand-up:before
+  content: "\e129"
+.glyphicon-hand-down:before
+  content: "\e130"
+.glyphicon-circle-arrow-right:before
+  content: "\e131"
+.glyphicon-circle-arrow-left:before
+  content: "\e132"
+.glyphicon-circle-arrow-up:before
+  content: "\e133"
+.glyphicon-circle-arrow-down:before
+  content: "\e134"
+.glyphicon-globe:before
+  content: "\e135"
+.glyphicon-wrench:before
+  content: "\e136"
+.glyphicon-tasks:before
+  content: "\e137"
+.glyphicon-filter:before
+  content: "\e138"
+.glyphicon-briefcase:before
+  content: "\e139"
+.glyphicon-fullscreen:before
+  content: "\e140"
+.glyphicon-dashboard:before
+  content: "\e141"
+.glyphicon-paperclip:before
+  content: "\e142"
+.glyphicon-heart-empty:before
+  content: "\e143"
+.glyphicon-link:before
+  content: "\e144"
+.glyphicon-phone:before
+  content: "\e145"
+.glyphicon-pushpin:before
+  content: "\e146"
+.glyphicon-usd:before
+  content: "\e148"
+.glyphicon-gbp:before
+  content: "\e149"
+.glyphicon-sort:before
+  content: "\e150"
+.glyphicon-sort-by-alphabet:before
+  content: "\e151"
+.glyphicon-sort-by-alphabet-alt:before
+  content: "\e152"
+.glyphicon-sort-by-order:before
+  content: "\e153"
+.glyphicon-sort-by-order-alt:before
+  content: "\e154"
+.glyphicon-sort-by-attributes:before
+  content: "\e155"
+.glyphicon-sort-by-attributes-alt:before
+  content: "\e156"
+.glyphicon-unchecked:before
+  content: "\e157"
+.glyphicon-expand:before
+  content: "\e158"
+.glyphicon-collapse-down:before
+  content: "\e159"
+.glyphicon-collapse-up:before
+  content: "\e160"
+.glyphicon-log-in:before
+  content: "\e161"
+.glyphicon-flash:before
+  content: "\e162"
+.glyphicon-log-out:before
+  content: "\e163"
+.glyphicon-new-window:before
+  content: "\e164"
+.glyphicon-record:before
+  content: "\e165"
+.glyphicon-save:before
+  content: "\e166"
+.glyphicon-open:before
+  content: "\e167"
+.glyphicon-saved:before
+  content: "\e168"
+.glyphicon-import:before
+  content: "\e169"
+.glyphicon-export:before
+  content: "\e170"
+.glyphicon-send:before
+  content: "\e171"
+.glyphicon-floppy-disk:before
+  content: "\e172"
+.glyphicon-floppy-saved:before
+  content: "\e173"
+.glyphicon-floppy-remove:before
+  content: "\e174"
+.glyphicon-floppy-save:before
+  content: "\e175"
+.glyphicon-floppy-open:before
+  content: "\e176"
+.glyphicon-credit-card:before
+  content: "\e177"
+.glyphicon-transfer:before
+  content: "\e178"
+.glyphicon-cutlery:before
+  content: "\e179"
+.glyphicon-header:before
+  content: "\e180"
+.glyphicon-compressed:before
+  content: "\e181"
+.glyphicon-earphone:before
+  content: "\e182"
+.glyphicon-phone-alt:before
+  content: "\e183"
+.glyphicon-tower:before
+  content: "\e184"
+.glyphicon-stats:before
+  content: "\e185"
+.glyphicon-sd-video:before
+  content: "\e186"
+.glyphicon-hd-video:before
+  content: "\e187"
+.glyphicon-subtitles:before
+  content: "\e188"
+.glyphicon-sound-stereo:before
+  content: "\e189"
+.glyphicon-sound-dolby:before
+  content: "\e190"
+.glyphicon-sound-5-1:before
+  content: "\e191"
+.glyphicon-sound-6-1:before
+  content: "\e192"
+.glyphicon-sound-7-1:before
+  content: "\e193"
+.glyphicon-copyright-mark:before
+  content: "\e194"
+.glyphicon-registration-mark:before
+  content: "\e195"
+.glyphicon-cloud-download:before
+  content: "\e197"
+.glyphicon-cloud-upload:before
+  content: "\e198"
+.glyphicon-tree-conifer:before
+  content: "\e199"
+.glyphicon-tree-deciduous:before
+  content: "\e200"
+.glyphicon-cd:before
+  content: "\e201"
+.glyphicon-save-file:before
+  content: "\e202"
+.glyphicon-open-file:before
+  content: "\e203"
+.glyphicon-level-up:before
+  content: "\e204"
+.glyphicon-copy:before
+  content: "\e205"
+.glyphicon-paste:before
+  content: "\e206"
+.glyphicon-alert:before
+  content: "\e209"
+.glyphicon-equalizer:before
+  content: "\e210"
+.glyphicon-king:before
+  content: "\e211"
+.glyphicon-queen:before
+  content: "\e212"
+.glyphicon-pawn:before
+  content: "\e213"
+.glyphicon-bishop:before
+  content: "\e214"
+.glyphicon-knight:before
+  content: "\e215"
+.glyphicon-baby-formula:before
+  content: "\e216"
+.glyphicon-tent:before
+  content: "\26fa"
+.glyphicon-blackboard:before
+  content: "\e218"
+.glyphicon-bed:before
+  content: "\e219"
+.glyphicon-apple:before
+  content: "\f8ff"
+.glyphicon-erase:before
+  content: "\e221"
+.glyphicon-hourglass:before
+  content: "\231b"
+.glyphicon-lamp:before
+  content: "\e223"
+.glyphicon-duplicate:before
+  content: "\e224"
+.glyphicon-piggy-bank:before
+  content: "\e225"
+.glyphicon-scissors:before
+  content: "\e226"
+.glyphicon-bitcoin:before
+  content: "\e227"
+.glyphicon-btc:before
+  content: "\e227"
+.glyphicon-xbt:before
+  content: "\e227"
+.glyphicon-yen:before
+  content: "\00a5"
+.glyphicon-jpy:before
+  content: "\00a5"
+.glyphicon-ruble:before
+  content: "\20bd"
+.glyphicon-rub:before
+  content: "\20bd"
+.glyphicon-scale:before
+  content: "\e230"
+.glyphicon-ice-lolly:before
+  content: "\e231"
+.glyphicon-ice-lolly-tasted:before
+  content: "\e232"
+.glyphicon-education:before
+  content: "\e233"
+.glyphicon-option-horizontal:before
+  content: "\e234"
+.glyphicon-option-vertical:before
+  content: "\e235"
+.glyphicon-menu-hamburger:before
+  content: "\e236"
+.glyphicon-modal-window:before
+  content: "\e237"
+.glyphicon-oil:before
+  content: "\e238"
+.glyphicon-grain:before
+  content: "\e239"
+.glyphicon-sunglasses:before
+  content: "\e240"
+.glyphicon-text-size:before
+  content: "\e241"
+.glyphicon-text-color:before
+  content: "\e242"
+.glyphicon-text-background:before
+  content: "\e243"
+.glyphicon-object-align-top:before
+  content: "\e244"
+.glyphicon-object-align-bottom:before
+  content: "\e245"
+.glyphicon-object-align-horizontal:before
+  content: "\e246"
+.glyphicon-object-align-left:before
+  content: "\e247"
+.glyphicon-object-align-vertical:before
+  content: "\e248"
+.glyphicon-object-align-right:before
+  content: "\e249"
+.glyphicon-triangle-right:before
+  content: "\e250"
+.glyphicon-triangle-left:before
+  content: "\e251"
+.glyphicon-triangle-bottom:before
+  content: "\e252"
+.glyphicon-triangle-top:before
+  content: "\e253"
+.glyphicon-console:before
+  content: "\e254"
+.glyphicon-superscript:before
+  content: "\e255"
+.glyphicon-subscript:before
+  content: "\e256"
+.glyphicon-menu-left:before
+  content: "\e257"
+.glyphicon-menu-right:before
+  content: "\e258"
+.glyphicon-menu-down:before
+  content: "\e259"
+.glyphicon-menu-up:before
+  content: "\e260"
